@@ -1,0 +1,41 @@
+.form {
+    @include extend("form-inline py-3");
+
+    h1 {
+        @include extend("text-center text-capitalize")
+    }
+
+    input,
+    textarea {
+        @include extend("form-control my-2 px-4");
+
+        &::-webkit-input-placeholder {
+            color: rgba(black, .5);
+            // @extend %text-capitalize;
+        }
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        @include extend("btn btn-primary w-100");
+    }
+
+    .input {
+        position: relative;
+
+        .icon {
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 12px;
+            left: 7.5px;
+        }
+    }
+
+    .error {
+        @include extend("alert alert-danger");
+    }
+}

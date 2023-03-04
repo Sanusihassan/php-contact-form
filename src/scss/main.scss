@@ -1,0 +1,15 @@
+// @import "cssmolecule/main.scss";
+@import "/node_modules/cssmolecule/main.scss";
+@import "/node_modules/custom-bs/scss/bootstrap.scss";
+// @import "custom-bs/scss/bootstrap.scss";
+
+.container {
+    @include extend("container");
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+@import "./form";
